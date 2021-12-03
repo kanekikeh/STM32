@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"hellowindow1\startup_stm32f103xb.o"
+"hellowindow1\main.o"
+"hellowindow1\gpio.o"
+"hellowindow1\usart.o"
+"hellowindow1\stm32f1xx_it.o"
+"hellowindow1\stm32f1xx_hal_msp.o"
+"hellowindow1\stm32f1xx_hal_gpio_ex.o"
+"hellowindow1\stm32f1xx_hal_tim.o"
+"hellowindow1\stm32f1xx_hal_tim_ex.o"
+"hellowindow1\stm32f1xx_hal_uart.o"
+"hellowindow1\stm32f1xx_hal.o"
+"hellowindow1\stm32f1xx_hal_rcc.o"
+"hellowindow1\stm32f1xx_hal_rcc_ex.o"
+"hellowindow1\stm32f1xx_hal_gpio.o"
+"hellowindow1\stm32f1xx_hal_dma.o"
+"hellowindow1\stm32f1xx_hal_cortex.o"
+"hellowindow1\stm32f1xx_hal_pwr.o"
+"hellowindow1\stm32f1xx_hal_flash.o"
+"hellowindow1\stm32f1xx_hal_flash_ex.o"
+"hellowindow1\stm32f1xx_hal_exti.o"
+"hellowindow1\system_stm32f1xx.o"
+--strict --scatter "HelloWindow1\HelloWindow1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HelloWindow1.map" -o HelloWindow1\HelloWindow1.axf
